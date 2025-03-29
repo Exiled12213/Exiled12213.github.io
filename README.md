@@ -12,9 +12,9 @@ of who i am and what i do
 
 Technologies Used
 
-- HTML5
-- CSS3
-
+- HTML
+- CSS
 - Flexbox for layout
 - Responsive design principles
+- Includes a header, navigation bar, main content area, functional sidebar, and footer.
 
