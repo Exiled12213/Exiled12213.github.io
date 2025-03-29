@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome</title>
+    <style>
+        /* Fullscreen centering styles */
+        html, body {
+            height: 100%; /* Ensure the body takes full height */
+            margin: 0; /* Remove default margin */
+            position: relative; /* Position relative for pseudo-element */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        body::before {
+            content: ""; /* Create a pseudo-element */
+            position: absolute; /* Position it absolutely */
+            top: 0; /* Align to the top */
+            left: 0; /* Align to the left */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-image: url('images/bgimage3.png'); /* Replace with your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+            filter: blur(8px); /* Apply blur effect */
+            z-index: 0; /* Send it behind other content */
+        }
+        body {
+            display: flex; /* Use Flexbox for centering */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: white; /* Optional: Text color for better visibility */
+            z-index: 1; /* Bring content above the background */
+        }
+        .clickable-image {
+            cursor: pointer; /* Change cursor to pointer on hover */
+            width: 1200x; /* Set width to match image dimensions */
+            height: 640x; /* Set height to match image dimensions */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Shadow for depth */
+            margin-bottom: 20px; /* Space between image and text */
+            position: relative; /* Position relative for layering */
+            z-index: 1; /* Bring image above the background */
+        }
+        .proceed-text {
+            font-family: 'Lucida Console', monospace; /* Set font style */
+            font-size: 20px; /* Font size */
+            color: #e2e7e9; /* Text color */
+            text-align: center; /* Center text */
+            position: relative; /* Position relative for layering */
+            z-index: 1; /* Bring text above the background */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> 
+        <img src="images/bg.jpg" alt="Welcome" class="clickable-image">
+    </a>
+    <div class="proceed-text">Proceed</div>
+</body>
+</html>
