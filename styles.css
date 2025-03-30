@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2;
     background-color: #ffffff;
     color: #144670;
 }
@@ -126,7 +126,7 @@ main h2 {
 .about-img {
     max-width: 50%;
     height: auto;
-    border-radius: 10%;
+    border-radius: 0%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
